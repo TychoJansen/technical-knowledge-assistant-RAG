@@ -218,3 +218,15 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Local data; split and stats are committed
+data/*
+!data/splits.json
+!data/stats.json
+indexes/
+
+# Notebooks
+notebooks/
+
+# Tests
+tests/
