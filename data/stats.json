@@ -1,0 +1,41 @@
+{
+  "n_chunks": 49514,
+  "n_queries": 203,
+  "n_unique_relevant_doc_ids": 1547,
+  "n_relevant_doc_ids_missing_from_corpus": 0,
+  "missing_relevant_doc_ids_sample": [],
+  "chunk_length_chars": {
+    "min": 1,
+    "median": 3860.0,
+    "mean": 4103.8,
+    "p95": 8964.0,
+    "max": 21824
+  },
+  "chunks_per_repo": {
+    "llama_index": 13899,
+    "transformers": 13335,
+    "langchain": 12017,
+    "langchainjs": 4804,
+    "chroma": 1431,
+    "openai-cookbook": 1383,
+    "azure-openai": 1340,
+    "openai-python": 652,
+    "azure-search-openai-demo": 557,
+    "langchain-nextjs-template": 96
+  },
+  "avg_nuggets_per_query": 3.15,
+  "avg_relevant_docs_per_query": 10.92,
+  "split": {
+    "seed": 42,
+    "dev": {
+      "n": 60,
+      "js": 4,
+      "python": 56
+    },
+    "test": {
+      "n": 143,
+      "js": 8,
+      "python": 135
+    }
+  }
+}

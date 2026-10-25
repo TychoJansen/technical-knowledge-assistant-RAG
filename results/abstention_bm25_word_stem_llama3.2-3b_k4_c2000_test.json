@@ -1,0 +1,31 @@
+{
+  "name": "bm25_word_stem_llama3.2-3b_k4_c2000",
+  "split": "test",
+  "config": {
+    "tokenizer": "word_stem",
+    "top_k": 4,
+    "max_chars": 2000,
+    "max_tokens": 800,
+    "prompt": "f2d2db446790",
+    "answer_rules": 4,
+    "assistant_llm": {
+      "model": "llama3.2:3b",
+      "digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+      "num_ctx": 8192,
+      "temperature": 0.0,
+      "seed": 42
+    },
+    "context_version": 1,
+    "sample": null
+  },
+  "metrics": {
+    "n": 143,
+    "correct_abstention_rate": 0.45454545454545453,
+    "false_answer_rate": 0.5384615384615384,
+    "invalid_rate": 0.006993006993006993,
+    "cited_false_answer_rate": 0.8441558441558441,
+    "answers_with_dropped_citations_rate": 0.055944055944055944,
+    "context_size_mean": 4.0,
+    "generation_s_mean": 46.431994726572434
+  }
+}

@@ -21,6 +21,7 @@ repos:
     -   id: check-yaml
         files: ^(?!.*\.cfn\.yaml$).*\.yaml$     # Check all yaml files except the AWS Cloud Formation scripts .cfn.yaml
     -   id: check-added-large-files
+        exclude: ^results/runs/   # raw top-100 rankings per question (evaluation evidence, up to ~1.6 MB)
     -   id: check-merge-conflict
     -   id: end-of-file-fixer
     -   id: trailing-whitespace
@@ -30,12 +31,13 @@ repos:
     hooks:
     -   id: flake8
         additional_dependencies: [flake8-docstrings]
-        args: ['--ignore=E203, E501, W503']
+        args: ['--ignore=E203, E501, W503', '--per-file-ignores=tests/*:D1']   # test names describe the test
 
 -   repo: https://github.com/pycqa/pydocstyle
     rev: 6.3.0
     hooks:
     -   id: pydocstyle
+        exclude: ^tests/
         args:
         - --convention=google
 

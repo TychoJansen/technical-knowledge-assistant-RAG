@@ -1,0 +1,63 @@
+{
+  "a": "bm25_word_stem_llama3.2-3b_k4_c2000_sample20_nojudge",
+  "b": "bm25_word_stem_llama3.2-3b_k6_c2000_sample20_nojudge",
+  "split": "dev",
+  "evaluation": "answers",
+  "metrics": {
+    "context_coverage": {
+      "n": 20,
+      "mean_a": 0.25416666666666665,
+      "mean_b": 0.27083333333333337,
+      "diff": 0.016666666666666666,
+      "ci_low": 0.0,
+      "ci_high": 0.05,
+      "b_higher": 1,
+      "b_lower": 0,
+      "same": 19
+    },
+    "answered": {
+      "n": 20,
+      "mean_a": 0.2,
+      "mean_b": 0.25,
+      "diff": 0.05,
+      "ci_low": -0.1,
+      "ci_high": 0.25,
+      "b_higher": 2,
+      "b_lower": 1,
+      "same": 17
+    },
+    "false_abstention": {
+      "n": 20,
+      "mean_a": 0.8,
+      "mean_b": 0.75,
+      "diff": -0.05,
+      "ci_low": -0.25,
+      "ci_high": 0.1,
+      "b_higher": 1,
+      "b_lower": 2,
+      "same": 17
+    },
+    "citation_precision_qrels": {
+      "n": 3,
+      "mean_a": 0.0,
+      "mean_b": 0.0,
+      "diff": 0.0,
+      "ci_low": 0.0,
+      "ci_high": 0.0,
+      "b_higher": 0,
+      "b_lower": 0,
+      "same": 3
+    },
+    "generation_s": {
+      "n": 20,
+      "mean_a": 37.23440531000233,
+      "mean_b": 49.591144140006506,
+      "diff": 12.35673883000418,
+      "ci_low": 10.509766905008291,
+      "ci_high": 14.315753585002676,
+      "b_higher": 20,
+      "b_lower": 0,
+      "same": 0
+    }
+  }
+}

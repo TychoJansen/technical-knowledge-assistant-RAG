@@ -1,0 +1,41 @@
+{
+  "a": "bm25_word_stem_llama3.2-3b_k4_c2000_sample20",
+  "b": "bm25_word_stem_llama3.2-3b_k4_c3000_sample20",
+  "split": "dev",
+  "evaluation": "abstention",
+  "metrics": {
+    "correct_abstention": {
+      "n": 20,
+      "mean_a": 0.15,
+      "mean_b": 0.05,
+      "diff": -0.1,
+      "ci_low": -0.25,
+      "ci_high": 0.0,
+      "b_higher": 0,
+      "b_lower": 2,
+      "same": 18
+    },
+    "false_answer": {
+      "n": 20,
+      "mean_a": 0.8,
+      "mean_b": 0.95,
+      "diff": 0.15,
+      "ci_low": 0.0,
+      "ci_high": 0.3,
+      "b_higher": 3,
+      "b_lower": 0,
+      "same": 17
+    },
+    "generation_s": {
+      "n": 20,
+      "mean_a": 47.246213630007695,
+      "mean_b": 56.25678771500534,
+      "diff": 9.010574084997643,
+      "ci_low": 2.0393059799971525,
+      "ci_high": 13.99156448498834,
+      "b_higher": 19,
+      "b_lower": 1,
+      "same": 0
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "name": "bm25_word_stem_llama3.2-3b_k4_c3000_sample20_nojudge",
+  "split": "dev",
+  "config": {
+    "tokenizer": "word_stem",
+    "query_mode": "full",
+    "top_k": 4,
+    "max_chars": 3000,
+    "max_tokens": 800,
+    "prompt": "e988f60a3726",
+    "answer_rules": 4,
+    "assistant_llm": {
+      "model": "llama3.2:3b",
+      "digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+      "num_ctx": 8192,
+      "temperature": 0.0,
+      "seed": 42
+    },
+    "judge_llm": null,
+    "judge_version": null,
+    "sample": {
+      "limit": 20,
+      "seed": 42
+    }
+  },
+  "freshstack": {
+    "n": 20,
+    "context_coverage": 0.25416666666666665,
+    "context_recall": 0.06429198292220115,
+    "nugget_recall": null,
+    "nugget_recall_answered": null,
+    "answered_rate": 0.15,
+    "false_abstention_rate": 0.85,
+    "invalid_rate": 0.0,
+    "n_citations": 8,
+    "citation_support": null,
+    "citation_judge_yes_rate": null,
+    "citation_yes_without_quote_rate": null,
+    "citation_precision_qrels": 0.0,
+    "citation_unjudged_rate": 0.5,
+    "uncited_answer_rate": 0.0,
+    "answers_with_dropped_citations_rate": 0.0,
+    "answers_with_repaired_citations_rate": 0.1,
+    "judge_parse_failure_rate": null,
+    "generation_s_mean": 44.991361770001824,
+    "judge_s_mean": null
+  }
+}

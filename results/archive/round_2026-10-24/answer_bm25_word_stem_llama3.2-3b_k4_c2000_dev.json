@@ -1,0 +1,51 @@
+{
+  "name": "bm25_word_stem_llama3.2-3b_k4_c2000",
+  "split": "dev",
+  "config": {
+    "tokenizer": "word_stem",
+    "query_mode": "full",
+    "top_k": 4,
+    "max_chars": 2000,
+    "max_tokens": 800,
+    "prompt": "c745ef277954",
+    "answer_rules": 4,
+    "assistant_llm": {
+      "model": "llama3.2:3b",
+      "digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+      "num_ctx": 8192,
+      "temperature": 0.0,
+      "seed": 42
+    },
+    "judge_llm": {
+      "model": "llama3",
+      "digest": "365c0bd3c000a25d28ddbf732fe1c6add414de7275464c4e4d1c3b5fcb5d8ad1",
+      "num_ctx": 8192,
+      "temperature": 0.0,
+      "seed": 42
+    },
+    "judge_version": 5,
+    "sample": null
+  },
+  "freshstack": {
+    "n": 60,
+    "context_coverage": 0.2602777777777778,
+    "context_recall": 0.09240415507256114,
+    "nugget_recall": 0.41388888888888886,
+    "nugget_recall_answered": 0.5398550724637681,
+    "answered_rate": 0.7666666666666667,
+    "false_abstention_rate": 0.23333333333333334,
+    "invalid_rate": 0.0,
+    "n_citations": 104,
+    "citation_support": 0.20192307692307693,
+    "citation_judge_yes_rate": 0.33653846153846156,
+    "citation_yes_without_quote_rate": 0.1346153846153846,
+    "citation_precision_qrels": 0.21153846153846154,
+    "citation_unjudged_rate": 0.3173076923076923,
+    "uncited_answer_rate": 0.021739130434782608,
+    "answers_with_dropped_citations_rate": 0.016666666666666666,
+    "answers_with_repaired_citations_rate": 0.1,
+    "judge_parse_failure_rate": 0.0,
+    "generation_s_mean": 40.11260468999875,
+    "judge_s_mean": 70.01297890000252
+  }
+}
